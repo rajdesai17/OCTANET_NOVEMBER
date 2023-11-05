@@ -1,0 +1,343 @@
+*{
+    /* background-image: url(https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000); */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 150px;
+    width: 100%;
+    /* background-color: rgb(235, 29, 29); */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    position: fixed;
+    justify-content: flex-start;
+    gap: 40px;
+    z-index: 99;
+}
+#nav img{
+    height: 130px;
+    width: 130px;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#main{
+    position: relative;
+    background-color: rgb(26, 23, 23);
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+.page1 img{
+    z-index: -1;
+    position: fixed;
+    filter: brightness(30%);
+}
+
+.page1 h1{
+    width: 70%;
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    
+}
+.page1 h2{
+    width: 50%;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page1 h4{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.page1 #arrow{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid #95C11E;
+    display: flex;
+    align-items: center;
+    left: -2%;
+    bottom: 1%;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.page1 #arrow span{
+    font-size: 50px;
+    font-weight: 100;
+}
+.page1 #arrow:hover{
+    scale: 0.4;
+    background-color: #95C11E;
+}
+#page2{
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller{
+    display: flex;
+    gap: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+#page2::-webkit-scrollbar{
+    display: none;
+}
+#scroller h1{
+    margin-right: 10px;
+    /* position: relative; */
+    display: inline-block;
+    /* z-index: 9; */
+    margin-right: 10px;
+    color: #119F3A;
+    transition: all linear 0.5s;
+    font-size: 50px;
+    /* color: blueviolet; */
+    
+
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#page3{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    
+}
+#page3 h1{
+    width: 50%;
+    font-size:40px ;
+    margin: 0 30%;
+    color:rgba(255, 255, 0, 0.863);
+    font-weight: 900;
+    margin-left: 25%;
+    z-index: 9;
+    
+}
+#page3 h3{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 30%;
+    margin-top: 30px;
+    
+    
+}
+
+#card-container{
+    height: 60vh;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+.card{
+    height: 70%;
+    width: 20%;
+    /* background-color: blue; */
+    transition: all ease 0.6s;
+    border-radius: 30px;
+    
+}
+#card1 img{
+    height:100% ;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+#card2 img{
+    height:100% ;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+#card3 img{
+    height:100% ;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover
+}
+#card-container:hover .card{
+    scale: 1.2;
+}
+#page4{
+    height: 30vh;
+    width: 100%;
+    /* background-color:#a11a1a; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to left bottom,rgba(255, 255, 0, 0.863),rgb(0, 255, 85));
+}
+#page4 h3{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    width: 40%;
+    text-align: center;
+    margin:90px 0 ;
+    color: #000;
+    
+}
+
+#page5{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(26, 23, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: 10;
+}
+#page5 h2{
+    width: 44%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+#page5 img{
+    position: absolute;
+    height: 60px;
+}
+#page5 #colon1{
+    left: 20%;
+    top: 10%;
+    transition: all ease 0.4s;
+}
+#page5 #colon2{
+    right: 20%;
+    bottom: 10%;
+    transition: all ease 0.4s;
+}
+#page5:hover #colon1{
+    left: 22%;
+    top: 20%;
+}
+#page5:hover #colon2{
+    right: 22%;
+    bottom: 20%;
+}
+#footer1{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,#119F3A,#ACE022);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    gap: 200px;
+    padding: 0 150px;
+    z-index: 10;
+    
+}
+#footer1 .logo{
+    height:100%;
+    position: absolute;
+    left: 0;
+}
+#footer1 .twitter{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 25%;
+    bottom: 12%;
+}
+#footer1 .insta{
+    height: 29px;
+    width: 29px;
+    position: absolute;
+    right: 28%;
+    bottom: 12%;
+}
+#footer1 .fb{
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    right: 22%;
+    bottom: 12%;
+}
+#footer1 #f1{
+    position: absolute;
+    left: 25%;
+    font-size: 20px;
+    font-weight: 700;
+}
+#footer1 #f2{
+    position: absolute;
+    left: 43%;
+    font-size: 20px;
+    font-weight: 700;
+}
+#footer1 #f3{
+    position: absolute;
+    left: 70%;
+    font-size: 20px;
+    font-weight: 700;
+}
+#footer{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+
